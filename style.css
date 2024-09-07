@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(100, 186, 220),pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    border: 2px solid white;
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+}
+.name-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.container label{
+    font-size: 20px;
+}
+
+#name,
+#email{
+    width: 270px;
+    /* flex-grow: 1; */
+    padding: 15px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+#message{
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* max-width: 100%; */
+}
+#btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid  rgb(19, 74, 225);
+    background-color: rgb(19, 74, 225);
+    color: white;
+    font-size: 16px;
+    transition:all 0.5s ease ;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:435px) {
+    .name-section{
+        flex-direction: column;
+        align-items: start;
+    }
+}
